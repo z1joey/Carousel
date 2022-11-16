@@ -12,6 +12,11 @@
 		D43632432924302500E51711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43632412924302500E51711 /* Main.storyboard */; };
 		D43632452924302600E51711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D43632442924302600E51711 /* Assets.xcassets */; };
 		D43632482924302600E51711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43632462924302600E51711 /* LaunchScreen.storyboard */; };
+		D43632542924E2D100E51711 /* CarouselTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43632532924E2D100E51711 /* CarouselTimer.swift */; };
+		D44AAA9B2924E94B0047203B /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44AAA9A2924E94B0047203B /* CarouselView.xib */; };
+		D44AAA9D2924E95D0047203B /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44AAA9C2924E95D0047203B /* CarouselView.swift */; };
+		D44AAAA02924E9F50047203B /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44AAA9E2924E9F50047203B /* CarouselCell.swift */; };
+		D44AAAA12924E9F50047203B /* CarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44AAA9F2924E9F50047203B /* CarouselCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		D43632442924302600E51711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D43632472924302600E51711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D43632492924302600E51711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D43632532924E2D100E51711 /* CarouselTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselTimer.swift; sourceTree = "<group>"; };
+		D44AAA9A2924E94B0047203B /* CarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
+		D44AAA9C2924E95D0047203B /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		D44AAA9E2924E9F50047203B /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		D44AAA9F2924E9F50047203B /* CarouselCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		D436323A2924302500E51711 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				D436325A2924E90E00E51711 /* CarouselView */,
 				D436323B2924302500E51711 /* AppDelegate.swift */,
 				D436323F2924302500E51711 /* ViewController.swift */,
 				D43632412924302500E51711 /* Main.storyboard */,
@@ -62,6 +73,18 @@
 				D43632492924302600E51711 /* Info.plist */,
 			);
 			path = Carousel;
+			sourceTree = "<group>";
+		};
+		D436325A2924E90E00E51711 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				D44AAA9A2924E94B0047203B /* CarouselView.xib */,
+				D44AAA9F2924E9F50047203B /* CarouselCell.xib */,
+				D44AAA9C2924E95D0047203B /* CarouselView.swift */,
+				D44AAA9E2924E9F50047203B /* CarouselCell.swift */,
+				D43632532924E2D100E51711 /* CarouselTimer.swift */,
+			);
+			path = CarouselView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +147,8 @@
 			files = (
 				D43632482924302600E51711 /* LaunchScreen.storyboard in Resources */,
 				D43632452924302600E51711 /* Assets.xcassets in Resources */,
+				D44AAAA12924E9F50047203B /* CarouselCell.xib in Resources */,
+				D44AAA9B2924E94B0047203B /* CarouselView.xib in Resources */,
 				D43632432924302500E51711 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43632542924E2D100E51711 /* CarouselTimer.swift in Sources */,
 				D43632402924302500E51711 /* ViewController.swift in Sources */,
 				D436323C2924302500E51711 /* AppDelegate.swift in Sources */,
+				D44AAAA02924E9F50047203B /* CarouselCell.swift in Sources */,
+				D44AAA9D2924E95D0047203B /* CarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

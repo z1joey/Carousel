@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselView" customModule="Carousel" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="T33-Ud-pK8" id="ZXb-NH-dZB"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="etP-cY-6Wm"/>
+                <outlet property="pageControl" destination="dzR-Ux-FDD" id="UW4-Cm-GAO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="T33-Ud-pK8">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Rga-VK-epR">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JNT-by-7C5"/>
+                        <outlet property="delegate" destination="-1" id="qMP-Lf-Io9"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dzR-Ux-FDD">
+                    <rect key="frame" x="138.66666666666666" y="234" width="116" height="26"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dzR-Ux-FDD" firstAttribute="centerX" secondItem="T33-Ud-pK8" secondAttribute="centerX" id="07g-DL-PHJ"/>
+                <constraint firstItem="T33-Ud-pK8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EkJ-oY-hSr"/>
+                <constraint firstItem="T33-Ud-pK8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LQU-P7-7Fu"/>
+                <constraint firstAttribute="trailing" secondItem="T33-Ud-pK8" secondAttribute="trailing" id="XU8-eq-Snr"/>
+                <constraint firstAttribute="bottom" secondItem="T33-Ud-pK8" secondAttribute="bottom" id="aDa-pd-gl4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dzR-Ux-FDD" secondAttribute="bottom" constant="20" id="vqS-vk-nPo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
